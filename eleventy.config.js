@@ -25,7 +25,8 @@ export default async function(eleventyConfig) {
 		.addPassthroughCopy({
 			"./public/": "/"
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
+		.addPassthroughCopy("./fonts");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -111,8 +112,8 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(IdAttributePlugin, {
 		// by default we use Eleventy’s built-in `slugify` filter:
-		// slugify: eleventyConfig.getFilter("slugify"),
-		// selector: "h1,h2,h3,h4,h5,h6", // default
+		slugify: eleventyConfig.getFilter("clugify"),
+	// 	selector: "h1,h2,h3,h4,h5,h6", // default
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {

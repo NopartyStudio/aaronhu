@@ -15,7 +15,7 @@ const eleventyComputed = {
 	permalink: function(data) {
 		// If DuplicatePermalinkOutputError occurs, check that no tag occurs
 		// with differing case, e.g. "RSS" and "rss".
-		return `/tags/${this.slugify(data.tag)}/`;
+		return `/tags/${this.clugify(data.tag)}/`;
 	}
 };
 ---

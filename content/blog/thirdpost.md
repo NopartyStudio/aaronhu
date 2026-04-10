@@ -1,8 +1,8 @@
 ---
-title: This is my third post.
+title: 这是自动生成的垃圾文章
 description: This is a post on My Blog about win-win survival strategies.
-date: 2018-08-24
-tags: ["second tag", "posts with two tags"]
+date: Last Modified
+tags: ["second tag", "即兴创作"]
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
@@ -10,17 +10,16 @@ Leverage agile frameworks to provide a robust synopsis for high level overviews.
 
 ### This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+哇哦，看起来我可以显示代码...
 
-```js
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+	cout << "Hello" << endl;
+	return 0;
 }
-
-// Test with a line break above this line.
-console.log('Test');
 ```
 
 ### Heading with a [link](#code)
@@ -40,4 +39,4 @@ console.log('Test');
 
 ## Section Header
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+不好

@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import slug from "limax";
 
 export default function(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -40,4 +41,14 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("sortAlphabetically", strings =>
 		(strings || []).sort((b, a) => b.localeCompare(a))
 	);
+
+	eleventyConfig.addFilter("clugify", (str) => {
+		if (!str) return "";
+		return slug(str, {
+		replacement: '-',
+		separateNumbers: false,
+		maintainCase: false,
+		tone: false  // 拼音不带声调
+		});
+  	});
 };

@@ -2,5 +2,5 @@
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 	font-family: 'LXGW';
 	font-style: normal;
-	src: url('/fonts/LXGW.ttf') format('truetype') /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url('/fonts/LXGW.woff2') format('woff2') 
 }

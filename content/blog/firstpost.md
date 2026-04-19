@@ -2,10 +2,9 @@
 title: 在嘈杂的世界发出自己的噪音
 description: 一篇测试文章
 date: Last Modified
-tags: 即兴创作
+tags:
+  - 即兴创作
 ---
-
-
 这里是 Aaronhu. 
 
 在嘈杂的世界发出自己的噪音，然后，请不要停下。

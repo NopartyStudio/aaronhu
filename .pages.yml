@@ -20,7 +20,7 @@ content:
         label: Date
         type: string
         default: "Last Modified"
-        hidden: true
+        # hidden: true
       
       - name: tags
         label: Tags

@@ -1,8 +1,10 @@
 ---
 title: 这是自动生成的垃圾文章
-description: This is a post on My Blog about win-win survival strategies.
+description: 这是测试 PagesCMS 用的文章
 date: Last Modified
-tags: ["second tag", "即兴创作"]
+tags:
+  - second tag
+  - 即兴创作
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
@@ -40,3 +42,7 @@ console.log('Test');
 ## Section Header
 
 不好
+
+## 这是在 PagesCMS 的更改
+
+太方便了！

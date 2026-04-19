@@ -98,3 +98,74 @@ tags:
 求其左上部分矩形的左上角为`(x1, y1)`，右下角为`(floor((x1 + x2) / 2), floor((y1 + y2) / 2))`
 
 ## 代码
+
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+struct Pos{
+    int x, y;
+};
+
+Pos get_left_up(Pos p1, Pos p2){ // 获取左上角矩形的右下角坐标
+    Pos p = { (int)((p1.x + p2.x) / 2), (int)((p1.y + p2.y) / 2) };
+    return p;
+}
+
+int loser[(int)pow(2, 11)][(int)pow(2, 11)];
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int n;
+    cin >> n;
+    int ssize = pow(2, n);
+    int rsize = ssize; // 当前寻找的正方形边长
+
+    for(int x = 0; x <= ssize - 1; x++){
+        for(int y = 0; y <= ssize - 1; y++){
+            loser[y][x] = 1; // 初始全部为1
+        }
+    }
+
+    while(rsize > 1){ // 当寻找的正方形边长为1,不用再找
+        Pos sp = {0, 0}, ep = {rsize - 1, rsize - 1};
+        while(true){
+            if(ep.x <= ssize - 1){
+                // 把左上角全部都变为0
+                Pos tmp_ep = get_left_up(sp, ep);
+                for(int x = sp.x; x <= tmp_ep.x; x++){
+                    for(int y = sp.y; y <= tmp_ep.y; y++){
+                        loser[y][x] = 0; // 不用考虑是否已经为0,反正都一样
+                    }
+                }
+                sp.x += rsize; ep.x += rsize; // 横向地毯移动
+            }
+            else if(ep.y <= ssize - 1){
+                sp.x = 0; ep.x = rsize - 1; // 纵向地毯移动
+                sp.y += rsize; ep.y += rsize;
+            }
+            else{
+                break; // 否则，说明此规格正方形已经遍历完成
+            }
+
+        }
+        rsize /= 2;
+    }
+
+    for(int x = 0; x <= ssize - 1; x++){
+        for(int y = 0; y <= ssize - 1; y++){
+            cout << loser[y][x] << " ";
+        }
+        cout << endl;
+    }
+}
+
+```
+
+## 心得
+
+实际我在实现的时候发现，我们其实无需关注区域是否已经被寻找过，因为始终设为0的行为是可以正确运作的（毕竟新的正方形更小吗），这样，我换来了更少的代码，另外，这一题可真险啊，n=11就炸了，幸亏n<=10
+实际上我未来会用递归尝试写这一道题，这样可以换来更少的代码，应该也会更简单

@@ -6,6 +6,9 @@ content:
     type: collection
     path: content/blog
     format: yaml-frontmatter
+    filename:
+      template: "{primary}.md"
+      field: true 
     fields:
       - name: title
         label: Title

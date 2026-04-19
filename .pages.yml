@@ -1,0 +1,33 @@
+media: content/blog   # 简写形式
+
+content:
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: content/blog
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      
+      - name: description
+        label: Description
+        type: text
+      
+      - name: date
+        label: Date
+        type: string
+        default: "Last Modified"
+        hidden: true
+      
+      - name: tags
+        label: Tags
+        type: string
+        list: true   # 关键：开启数组模式
+      
+      - name: body
+        label: Content
+        type: rich-text
+        required: true

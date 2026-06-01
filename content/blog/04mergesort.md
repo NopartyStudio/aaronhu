@@ -21,11 +21,11 @@ tags:
 
 归并排序
 
-![](/content/blog/04-01.png)
+![](04-01.png)
 
 有序合并
 
-![](/content/blog/04-02.png)
+![](04-02.png)
 
 ## 最终代码
 

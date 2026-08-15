@@ -1,7 +1,7 @@
 ---
 title: 赦免战俘思路以及题解
 description: 是篇文章讲述了洛谷P5461我的思路以及代码
-date: Last Modified
+date: 2026-08-14
 tags:
   - 编程
   - OI

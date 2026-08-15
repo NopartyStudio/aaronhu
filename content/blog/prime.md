@@ -1,7 +1,7 @@
 ---
 title: 各种质数筛法
 description: 讲述了各种质数筛法
-date: Last Modified
+date: 2026-08-15
 tags:
   - OI
   - 编程
@@ -146,6 +146,6 @@ int main(){
 
 线性筛实际上有点困难，如果不理解，可以看这张图
 
-![](./prime-02.png)
+![](prime-02.png)
 
 ~~真是疯狂啊~~

@@ -1,7 +1,7 @@
 ---
 title: 在嘈杂的世界发出自己的噪音
 description: 一篇测试文章
-date: Last Modified
+date: 2026-08-14
 tags:
   - 即兴创作
 ---

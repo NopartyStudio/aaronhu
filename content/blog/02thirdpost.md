@@ -1,7 +1,7 @@
 ---
 title: 这是自动生成的垃圾文章
 description: 这是测试 PagesCMS 用的文章
-date: Last Modified
+date: 2026-08-14
 tags:
   - second tag
   - 即兴创作

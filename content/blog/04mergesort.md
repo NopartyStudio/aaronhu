@@ -1,7 +1,7 @@
 ---
 title: 关于归并排序
 description: 本文介绍归并排序
-date: Last Modified
+date: 2026-08-14
 tags:
   - 编程
   - OI

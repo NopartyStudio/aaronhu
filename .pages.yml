@@ -1,6 +1,4 @@
-media:
-  input: content/blog
-  output: ""  # 简写形式
+media: content/blog
 
 content:
   - name: blog

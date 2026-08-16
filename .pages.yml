@@ -11,7 +11,7 @@ content:
       field: true 
     fields:
       - name: title
-        label: Title
+        label: 标题
         type: string
         required: true
       
@@ -20,17 +20,25 @@ content:
         type: text
       
       - name: date
-        label: Date
+        label: 日期
         type: date
         default: "Last Modified"
         # hidden: true
       
       - name: tags
-        label: Tags
+        label: 标签
         type: string
         list: true   # 关键：开启数组模式
       
       - name: body
-        label: Content
+        label: 内容
         type: rich-text
         required: true
+  - name: introduce
+    label: 自我介绍
+    type: file
+    path: content/about.md
+    fields:
+      - name: body
+        label: 内容
+        type: rich-text

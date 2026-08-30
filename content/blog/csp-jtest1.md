@@ -11,15 +11,10 @@ tags:
 ## 一、卷面概览
 
 | 板块 | 得分 | 满分 |
-
 |---|---|---|
-
 | 一、单项选择题（1–15） | **26** | 30 |
-
 | 二、阅读程序（16–32） | **28** | 40 |
-
 | 三、完善程序（33–42） | **30** | 30 |
-
 | **总分** | **84** | **100** |
 
 **一句话总评**：程序补全满分，阅读程序 是主要失分板块（阅读/补全的程序细节），建议按批注把这块的错题重做一遍。
@@ -53,21 +48,13 @@ tags:
 ## 三、错误清单总表
 
 | 题号 | 你的答案 | 标准答案 | 错因 | 知识点 |
-
-|---|---|---|---|---|
-
+| --- | --- | --- | --- | --- |
 | 2 | B | D | 知识缺失 | 计算机基础 · 操作系统（Windows 发展史） |
-
 | 8 | C | B | 知识缺失 | 数据结构 · 树与二叉树（哈夫曼树） |
-
 | 19 | 对 | 错 | 程序理解偏差 | 语言与程序 · C++ 语法（变量作用域） |
-
-| 21 | C | A | 知识缺失 | 数学 · 组合与计数（素数计数）＋ 程序细节 |
-
+| 21 | C | A | 知识缺失 | 数学 · 组合与计数（素数计数）+ 程序细节 |
 | 22 | 错 | 对 | 程序理解偏差 | 语言与程序 · C++ 语法（运算符优先级） |
-
 | 29 | 对 | 错 | 程序理解偏差 | 数学 · 组合与计数（排列对称性） |
-
 | 32 | A | B | 计算粗心 | 算法 · 搜索（字典序） |
 
 ---
@@ -184,6 +171,6 @@ tags:
 
 试卷等内容归档:
 
-[试卷]([https://aaronhustudent.lanzoub.com/i9Hum45f8r7c](https://aaronhustudent.lanzoub.com/i9Hum45f8r7c))
+[试卷](https://aaronhustudent.lanzoub.com/i9Hum45f8r7c](https://aaronhustudent.lanzoub.com/i9Hum45f8r7c)
 
-[解析]([https://aaronhustudent.lanzoub.com/iIMQv45f942f](https://aaronhustudent.lanzoub.com/iIMQv45f942f))
+[解析](https://aaronhustudent.lanzoub.com/iIMQv45f942f](https://aaronhustudent.lanzoub.com/iIMQv45f942f)

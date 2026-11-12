@@ -1,4 +1,7 @@
-media: content/blog
+media:
+  input: content/assets/blog
+  output: /assets/blog
+  categories: [image]
 
 content:
   - name: blog

@@ -19,7 +19,7 @@ DP 的转移方程的核心思想就是分类讨论了。
 
 ## 01 背包
 
-![](dp-basic-01.PNG)
+![](/assets/blog/dp-basic-01.PNG)
 
 ### 题意
 
@@ -373,7 +373,7 @@ if(s > 0){
 
 这样 s 件就被拆成了 **O(log s)** 捆。然后用 01 背包跑一遍。
 
-![](dp-basic-02.svg)
+![](/assets/blog/dp-basic-02.svg)
 
 ### 二进制优化代码
 
@@ -432,7 +432,7 @@ int main(){
 
 > N 组物品，背包容量 V。**同一组内的物品最多只能选一个**（可以不选）。第 i 组有 s[i] 个物品，第 k 个体积 v[i][k]、价值 w[i][k]。求最大价值。
 
-![](dp-basic-03.png)
+![](/assets/blog/dp-basic-03.png)
 
 ### 状态定义
 

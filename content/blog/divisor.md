@@ -13,11 +13,11 @@ tags:
 
 我们先从一道简单的例题开始吧
 
-![](./divisor-02.jpg)
+![](/assets/blog/divisor-02.jpg)
 
 需要知道的数学知识：
 
-![](divisor-01.PNG)
+![](/assets/blog/divisor-01.PNG)
 
 参考代码：
 
@@ -55,11 +55,11 @@ int main(){
 
 依旧是一道例题：
 
-![](divisor-03.jpg)
+![](/assets/blog/divisor-03.jpg)
 
 这题也有相关数学知识：
 
-![](divisor-04.PNG)
+![](/assets/blog/divisor-04.PNG)
 
 这个公式要怎么证明呢，答案是展开就可以了，会发现就是所有约数组合之和
 
@@ -113,11 +113,11 @@ int main(){
 
 不错的图：
 
-![](divisor-06.png)
+![](/assets/blog/divisor-06.png)
 
 例题：
 
-![](divisor-05.jpg)
+![](/assets/blog/divisor-05.jpg)
 
 参考代码：
 
@@ -144,4 +144,4 @@ int main(){
 实际上它还有一个更严谨的证明：
 
 
-![](divisor-07.jpg)
+![](/assets/blog/divisor-07.jpg)

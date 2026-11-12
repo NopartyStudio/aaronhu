@@ -9,7 +9,7 @@ tags:
 ---
 我们先从例题开始：
 
-![](prime-01.jpg)
+![](/assets/blog/prime-01.jpg)
 
 需要知道的：
 
@@ -156,6 +156,6 @@ int main(){
 
 线性筛实际上有点困难，如果不理解，可以看这张图
 
-![](prime-02.png)
+![](/assets/blog/prime-02.png)
 
 ~~真是疯狂啊~~

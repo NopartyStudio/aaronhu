@@ -1,5 +1,3 @@
----
----
 ---js
 const eleventyNavigation = {
 	key: "About",

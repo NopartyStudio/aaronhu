@@ -1,9 +1,12 @@
+---
+---
 ---js
 const eleventyNavigation = {
 	key: "关于我",
 	order: 3
-};
----
-# About
 
-I am a person that writes stuff.
+## };
+
+# 关于我
+
+我是电教，学名入机，一个内向腼腆纯洁友善的人

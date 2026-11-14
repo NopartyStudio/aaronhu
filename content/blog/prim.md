@@ -3,6 +3,8 @@ title: Prim 算法复习笔记
 date: 2026-11-14
 tags:
   - OI
+  - 编程
+  - 图论
 ---
 ![Prim 算法演示](/assets/blog/prim-01.svg)
 

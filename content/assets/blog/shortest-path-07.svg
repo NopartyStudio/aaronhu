@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="520" viewBox="0 0 1060 520" font-family="'Noto Sans CJK SC','DejaVu Sans',sans-serif">
+  <style>
+    .e{stroke:#94a3b8;stroke-width:2.4;fill:none;stroke-linecap:round}
+    .e2{stroke:#cbd5e1;stroke-width:2.2;fill:none;stroke-linecap:round}
+    .hl{stroke:#2563eb;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .bad{stroke:#dc2626;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .good{stroke:#16a34a;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .dash{stroke:#94a3b8;stroke-width:2.2;stroke-dasharray:7 6;fill:none}
+    .n{fill:#f8fafc;stroke:#64748b;stroke-width:2.4}
+    .ns{fill:#dcfce7;stroke:#16a34a;stroke-width:2.8}
+    .ncur{fill:#fef3c7;stroke:#f59e0b;stroke-width:3.4}
+    .w{font-size:13px;font-weight:700;fill:#475569;text-anchor:middle}
+</style>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="an" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect width="1060" height="520" fill="#ffffff"/>
+<text x="24" y="34" font-size="21" fill="#0f172a" text-anchor="start" font-weight="700">⑦ Bellman-Ford：不再挑点，把每条边都松弛一遍</text>
+<text x="24" y="58" font-size="13.5" fill="#64748b" text-anchor="start" font-weight="400">第 k 轮 = 目前只允许走 k 条边。所以“n 轮之后还在变”就说明有负环</text>
+<rect x="24" y="76" width="360" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="40" y="102" font-size="15.5" fill="#0f172a" text-anchor="start" font-weight="700">三节点的例子</text>
+<text x="40" y="122" font-size="13" fill="#64748b" text-anchor="start" font-weight="400">1→2 权 1，2→3 权 1，1→3 权 3</text>
+<line class="hl" x1="88" y1="250" x2="192" y2="250" marker-end="url(#ab)"/>
+<rect x="132.2" y="226.0" width="15.5" height="16.6" rx="4" fill="#ffffff" opacity="0.94"/>
+<text x="140" y="238" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">1</text>
+<line class="hl" x1="228" y1="234" x2="300" y2="160" marker-end="url(#ab)"/>
+<rect x="268.2" y="196.0" width="15.5" height="16.6" rx="4" fill="#ffffff" opacity="0.94"/>
+<text x="276" y="208" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">1</text>
+<line class="e" x1="88" y1="244" x2="282" y2="152"/>
+<rect x="170.2" y="170.0" width="15.5" height="16.6" rx="4" fill="#ffffff" opacity="0.94"/>
+<text x="178" y="182" font-size="13" fill="#475569" text-anchor="middle" font-weight="700">3</text>
+<circle class="ns" cx="70" cy="250" r="17"/><text x="70" y="255.4" font-size="15" fill="#0f172a" text-anchor="middle" font-weight="700">1</text>
+<circle class="ns" cx="210" cy="250" r="17"/><text x="210" y="255.4" font-size="15" fill="#0f172a" text-anchor="middle" font-weight="700">2</text>
+<circle class="ns" cx="300" cy="140" r="17"/><text x="300" y="145.4" font-size="15" fill="#0f172a" text-anchor="middle" font-weight="700">3</text>
+<text x="50" y="330" font-size="12.5" fill="#475569" text-anchor="start" font-weight="700">初始 d = [0, ∞, ∞]</text>
+<text x="40" y="356" font-size="11.8" fill="#b45309" text-anchor="start" font-weight="700">第 1 轮 d[3] 只能取 3（0→1→3 要走两条边，这轮还不许）</text>
+<text x="420" y="100" font-size="15" fill="#0f172a" text-anchor="start" font-weight="700">每轮的 d[] 变化</text>
+<text x="420" y="140" font-size="13" fill="#475569" text-anchor="start" font-weight="700">初始</text>
+<rect x="496" y="118" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="513" y="139" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">0</text>
+<rect x="536" y="118" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="553" y="139" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">∞</text>
+<rect x="576" y="118" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="593" y="139" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">∞</text>
+<text x="630" y="139" font-size="12" fill="#64748b" text-anchor="start" font-weight="400">只有起点已知</text>
+<text x="420" y="198" font-size="13" fill="#475569" text-anchor="start" font-weight="700">第 1 轮</text>
+<rect x="496" y="176" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="513" y="197" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">0</text>
+<rect x="536" y="176" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="553" y="197" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">1</text>
+<rect x="576" y="176" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="593" y="197" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">3</text>
+<text x="630" y="197" font-size="12" fill="#64748b" text-anchor="start" font-weight="400">最多走 1 条边：d[2]=1，d[3]=3</text>
+<text x="420" y="256" font-size="13" fill="#475569" text-anchor="start" font-weight="700">第 2 轮</text>
+<rect x="496" y="234" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="513" y="255" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">0</text>
+<rect x="536" y="234" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="553" y="255" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">1</text>
+<rect x="576" y="234" width="34" height="30" rx="5" fill="#fef3c7" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="593" y="255" font-size="12.5" fill="#b45309" text-anchor="middle" font-weight="700">2</text>
+<text x="630" y="255" font-size="12" fill="#64748b" text-anchor="start" font-weight="400">最多走 2 条边：d[3]=1+1=2 更好</text>
+<text x="420" y="314" font-size="13" fill="#475569" text-anchor="start" font-weight="700">第 3 轮</text>
+<rect x="496" y="292" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="513" y="313" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">0</text>
+<rect x="536" y="292" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="553" y="313" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">1</text>
+<rect x="576" y="292" width="34" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="593" y="313" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="700">2</text>
+<text x="630" y="313" font-size="12" fill="#64748b" text-anchor="start" font-weight="400">不再变化 → 收敛，结束</text>
+<rect x="24" y="396" width="1012" height="106" rx="12" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.8"/>
+<text x="44" y="424" font-size="14.5" fill="#92400e" text-anchor="start" font-weight="700">为什么一定要 backup（备份上一轮的 d）？</text>
+<text x="44" y="450" font-size="13" fill="#7c2d12" text-anchor="start" font-weight="400">没有 backup：第 1 轮里 d[2] 刚被改成 1，同一轮马上又用它把 d[3] 改成 2。</text>
+<text x="44" y="472" font-size="13" fill="#7c2d12" text-anchor="start" font-weight="400">一轮里走了 2 条边，“第 k 轮 = 最多 k 条边”就不成立了 → n 轮判负环也就不可靠。</text>
+<text x="44" y="494" font-size="13" fill="#166534" text-anchor="start" font-weight="400">有 backup：本轮只读上一轮的 d，保证一轮恰好“多走一条边”，性质干净。</text>
+</svg>

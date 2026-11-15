@@ -89,7 +89,13 @@ export default async function(eleventyConfig) {
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+		// `svg` 只对 SVG 输入生效：配合下面的 svgShortCircuit，SVG 保持原始矢量格式，
+		// 不再被光栅化成 avif/webp；普通位图仍然走 avif + webp。
+		formats: ["avif", "webp", "auto", "svg"],
+
+		// SVG 输入时跳过所有光栅格式，直接输出原 SVG 文件。
+		// https://www.11ty.dev/docs/plugins/image/#skip-raster-formats-for-svg
+		svgShortCircuit: true,
 
 		// widths: ["auto"],
 

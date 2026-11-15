@@ -1,12 +1,10 @@
----
----
 ---js
 const eleventyNavigation = {
 	key: "About",
 	key: "关于我",
 	order: 3
-
-## };
+};
+---
 
 # 关于我
 

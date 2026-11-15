@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="512" viewBox="0 0 1120 512" font-family="'Noto Sans CJK SC','DejaVu Sans',sans-serif">
+  <style>
+    .e{stroke:#94a3b8;stroke-width:2.4;fill:none;stroke-linecap:round}
+    .e2{stroke:#cbd5e1;stroke-width:2.2;fill:none;stroke-linecap:round}
+    .hl{stroke:#2563eb;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .bad{stroke:#dc2626;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .good{stroke:#16a34a;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .dash{stroke:#94a3b8;stroke-width:2.2;stroke-dasharray:7 6;fill:none}
+    .n{fill:#f8fafc;stroke:#64748b;stroke-width:2.4}
+    .ns{fill:#dcfce7;stroke:#16a34a;stroke-width:2.8}
+    .ncur{fill:#fef3c7;stroke:#f59e0b;stroke-width:3.4}
+    .w{font-size:13px;font-weight:700;fill:#475569;text-anchor:middle}
+</style>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="an" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect width="1120" height="512" fill="#ffffff"/>
+<text x="24" y="34" font-size="21" fill="#0f172a" text-anchor="start" font-weight="700">② 五个算法，一张图记住它们的位置</text>
+<text x="24" y="58" font-size="13.5" fill="#64748b" text-anchor="start" font-weight="400">先看“单源还是多源”，再看“有没有负权边”，最后才看数据范围挑实现</text>
+<rect x="24" y="210" width="128" height="66" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+<text x="88.0" y="234" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">最短路</text>
+<text x="88.0" y="256" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">一个点？所有点？</text>
+<rect x="196" y="150" width="118" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="255.0" y="174" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">单源</text>
+<text x="255.0" y="196" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">固定起点</text>
+<rect x="196" y="320" width="118" height="56" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="255.0" y="344" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">多源</text>
+<text x="255.0" y="366" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">任意两点</text>
+<path class="e" d="M152,232 L174,232 L174,178 L196,178"/>
+<path class="e" d="M152,254 L174,254 L174,348 L196,348"/>
+<rect x="352" y="68" width="150" height="56" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="427.0" y="92" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">非负边</text>
+<text x="427.0" y="114" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">w ≥ 0</text>
+<rect x="352" y="210" width="150" height="56" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="427.0" y="234" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">有负边</text>
+<text x="427.0" y="256" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">w 可以是负数</text>
+<rect x="352" y="352" width="150" height="56" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="427.0" y="376" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">Floyd</text>
+<text x="427.0" y="398" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">n 很小才敢用</text>
+<path class="e" d="M314,178 L332,178 L332,96 L352,96"/>
+<path class="e" d="M314,178 L332,178 L332,238 L352,238"/>
+<path class="e" d="M314,348 L352,348"/>
+<rect x="540" y="34" width="220" height="56" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+<text x="650.0" y="58" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">朴素 Dijkstra  O(n²)</text>
+<text x="650.0" y="80" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">稠密图 / n ≤ 1000</text>
+<rect x="540" y="100" width="220" height="56" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+<text x="650.0" y="124" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">堆优化 Dijkstra  O(m log n)</text>
+<text x="650.0" y="146" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">稀疏图 / 主流写法</text>
+<rect x="540" y="182" width="220" height="56" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+<text x="650.0" y="206" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">Bellman-Ford  O(nm)</text>
+<text x="650.0" y="228" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">轮数有上限时好用，能判负环</text>
+<rect x="540" y="248" width="220" height="56" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+<text x="650.0" y="272" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">SPFA  平均 O(m)，最坏 O(nm)</text>
+<text x="650.0" y="294" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">有负边时的常用写法</text>
+<rect x="540" y="324" width="220" height="56" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+<text x="650.0" y="348" font-size="15.5" fill="#0f172a" text-anchor="middle" font-weight="700">Floyd  O(n³)</text>
+<text x="650.0" y="370" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="400">n ≤ 400 左右的全部点对</text>
+<path class="e" d="M502,96 L520,96 L520,62 L540,62"/>
+<path class="e" d="M502,96 L520,96 L520,128 L540,128"/>
+<path class="e" d="M502,238 L520,238 L520,210 L540,210"/>
+<path class="e" d="M502,238 L520,238 L520,276 L540,276"/>
+<path class="e" d="M502,380 L540,380"/>
+<text x="790" y="62" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="400">← 每条边只处理一次，靠「定案」贪心</text>
+<text x="790" y="128" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="400">← 实用首选，注意别忘 vis 判旧记录</text>
+<text x="790" y="210" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="400">← 第 k 轮 = 最多走 k 条边</text>
+<text x="790" y="276" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="400">← 队列优化，随机数据飞快</text>
+<text x="790" y="352" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="400">← k 必须写最外层循环</text>
+<rect x="24" y="420" width="1072" height="68" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="40" y="446" font-size="13.5" fill="#0f172a" text-anchor="start" font-weight="700">选型口诀：</text>
+<text x="118" y="446" font-size="13.5" fill="#334155" text-anchor="start" font-weight="400">① 有负权边吗？没有 → Dijkstra；有 → SPFA / Bellman-Ford。</text>
+<text x="118" y="470" font-size="13.5" fill="#334155" text-anchor="start" font-weight="400">② 要求所有点对吗？是 → Floyd（n 小）；否 → 单源算法更快。</text>
+</svg>

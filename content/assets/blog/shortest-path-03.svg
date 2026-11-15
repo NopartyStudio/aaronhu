@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="400" viewBox="0 0 880 400" font-family="'Noto Sans CJK SC','DejaVu Sans',sans-serif">
+  <style>
+    .e{stroke:#94a3b8;stroke-width:2.4;fill:none;stroke-linecap:round}
+    .e2{stroke:#cbd5e1;stroke-width:2.2;fill:none;stroke-linecap:round}
+    .hl{stroke:#2563eb;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .bad{stroke:#dc2626;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .good{stroke:#16a34a;stroke-width:4.4;stroke-linecap:round;fill:none}
+    .dash{stroke:#94a3b8;stroke-width:2.2;stroke-dasharray:7 6;fill:none}
+    .n{fill:#f8fafc;stroke:#64748b;stroke-width:2.4}
+    .ns{fill:#dcfce7;stroke:#16a34a;stroke-width:2.8}
+    .ncur{fill:#fef3c7;stroke:#f59e0b;stroke-width:3.4}
+    .w{font-size:13px;font-weight:700;fill:#475569;text-anchor:middle}
+</style>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="an" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect width="880" height="400" fill="#ffffff"/>
+<text x="24" y="34" font-size="21" fill="#0f172a" text-anchor="start" font-weight="700">③ 松弛（relax）：所有最短路算法的同一颗心脏</text>
+<text x="24" y="58" font-size="13.5" fill="#64748b" text-anchor="start" font-weight="400">只会做一件事：拿一条边去“试着抄近路”，能抄就抄</text>
+<rect x="24" y="76" width="400" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="40" y="102" font-size="15.5" fill="#0f172a" text-anchor="start" font-weight="700">现在手上的三个点</text>
+<line class="hl" x1="103" y1="210" x2="213" y2="210" marker-end="url(#ab)"/>
+<line class="hl" x1="247" y1="210" x2="363" y2="210" marker-end="url(#ab)"/>
+<rect x="149.9" y="185.1" width="16.1" height="17.9" rx="4" fill="#ffffff" opacity="0.94"/>
+<text x="158" y="198" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">6</text>
+<rect x="296.9" y="185.1" width="16.1" height="17.9" rx="4" fill="#ffffff" opacity="0.94"/>
+<text x="305" y="198" font-size="14" fill="#475569" text-anchor="middle" font-weight="700">4</text>
+<circle class="ns" cx="86" cy="210" r="17"/><text x="86" y="215.4" font-size="15" fill="#0f172a" text-anchor="middle" font-weight="700">A</text>
+<circle class="ns" cx="230" cy="210" r="17"/><text x="230" y="215.4" font-size="15" fill="#0f172a" text-anchor="middle" font-weight="700">B</text>
+<circle class="n" cx="380" cy="210" r="17"/><text x="380" y="215.4" font-size="15" fill="#b45309" text-anchor="middle" font-weight="700">C</text>
+<text x="86" y="156" font-size="13" fill="#15803d" text-anchor="middle" font-weight="700">d=0</text>
+<text x="230" y="156" font-size="13" fill="#15803d" text-anchor="middle" font-weight="700">d=6</text>
+<text x="380" y="156" font-size="13" fill="#b45309" text-anchor="middle" font-weight="700">d=15</text>
+<text x="360" y="246" font-size="12.5" fill="#1d4ed8" text-anchor="middle" font-weight="700">抄近路只要 10</text>
+<text x="224" y="336" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="400">A、B 已经是定案的最短距离，只有 C 还能被改小</text>
+<rect x="448" y="76" width="408" height="300" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="470" y="106" font-size="15" fill="#0f172a" text-anchor="start" font-weight="700">判断条件（松弛一次）</text>
+<rect x="470" y="122" width="364" height="70" rx="8" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="486" y="152" font-size="13" fill="#a5f3fc" text-anchor="start" font-weight="400">if (d[v] &gt; d[u] + w)   // 走 u 这条边更近</text>
+<text x="486" y="176" font-size="13" fill="#a5f3fc" text-anchor="start" font-weight="400">    d[v] = d[u] + w;   // 那就改掉</text>
+<text x="470" y="226" font-size="13.5" fill="#475569" text-anchor="start" font-weight="700">套进这张图：</text>
+<text x="470" y="252" font-size="14" fill="#b45309" text-anchor="start" font-weight="700">d[C] = 15   &gt;   d[B] + 4 = 10</text>
+<text x="470" y="278" font-size="14" fill="#15803d" text-anchor="start" font-weight="700">→  所以 d[C] 变成 10</text>
+<text x="470" y="316" font-size="13" fill="#475569" text-anchor="start" font-weight="400">松弛完，所有边都满足三角不等式：</text>
+<text x="470" y="342" font-size="15" fill="#1d4ed8" text-anchor="start" font-weight="700">d[v] ≤ d[u] + w(u, v)</text>
+</svg>
